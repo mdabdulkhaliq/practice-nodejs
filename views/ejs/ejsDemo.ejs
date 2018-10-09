@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>EJS Example</title>
+	</head>
+	<body>
+		<% include header %>
+
+		<%= tagline %>
+		<ul>
+			<% for(var i=1;i <=5 ; i++) { %>
+				<li>
+					<%= i + "-item" + i %>
+				</li>
+			<% } %>
+		</ul>
+
+		<% include footer %>
+	</body>
+</html>
